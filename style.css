@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
 }
 body{
@@ -31,4 +31,131 @@ body{
     display: flex;
     padding-left: 87px;
     padding-top: 9px;
+}
+.instagram-continue{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1){
+    min-height: 19rem;
+}
+
+.instagram-logo{
+    height: 3rem;
+}
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img{
+    height: 6rem;
+}
+
+ /*criando o botao de login*/
+.instagram-login{   
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram-logout{
+    color: #0095f6;
+    padding: 1rem;
+}
+
+.not-account{
+    color: rgb(160, 160, 160);
+}
+.link-blue{
+    color: #0095f6;
+    font-weight: bold;
+}
+
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download{
+    width: 10rem;
+    height: 3rem;
+    background-size: cover;
+}
+.app-download:nth-child(1){
+    background-image: url(assets/img/botao_store.png);
+}
+.app-download:nth-child(2){
+    background-image: url(assets/img/botao_play.png);
+}
+
+@media (max-width: 1275px){
+    .instragram-wrapper{
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 1024px) and (min-width: 876px){
+    .instragram-wrapper{
+        width: 85%;
+       
+    }
+}
+@media (max-width: 875px){
+    
+    .instragram-wrapper{
+        width: 40%;
+    }
+    .instagram-phone{
+        display: none;
+    }
+    .instagram-continue{
+        width: 100%;
+    }
+}
+@media (max-width: 640px){
+    body{
+        background-color: #ffffff;
+    }
+    .instragram-wrapper{
+        width: 100%;
+    }
+    .instagram-phone{
+        display: none;
+    }
+    .instagram-continue{
+        width: 100%;
+    }
+    .group{
+        border: none;
+    }
 }
